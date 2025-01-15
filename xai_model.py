@@ -56,6 +56,10 @@ def jls_extract_def(explainer, data_row, X_test, sample_idx, predict_fn, model, 
         num_features=2)
         
 
+explanation_list = exp.as_list()
+print("Explanation (feature contributions):")
+for feature, contribution in explanation_list:
+    print(f"  {feature}: {contribution}")
 
 
 
