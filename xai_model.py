@@ -55,6 +55,7 @@ def jls_extract_def(explainer, data_row, X_test, sample_idx, predict_fn, model, 
         predict_fn=model.predict_proba,
         num_features=2)
         
-    return exp
+
+
 
 
