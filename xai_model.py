@@ -47,5 +47,15 @@ def main():
     )
     exp.show_in_notebook(show_table=True)
 
-if __name__ == "__main__":
-    main()
+def jls_extract_def(explainer, data_row, X_test, sample_idx, predict_fn, model, num_features):
+    if __name__ == "__main__":
+        main()
+    exp = explainer.explain_instance(
+        data_row=X_test[sample_idx],
+        predict_fn=model.predict_proba,
+        num_features=2)
+        
+    return exp
+
+
+exp = jls_extract_def(explainer, data_row, X_test, sample_idx, predict_fn, model, num_features)
