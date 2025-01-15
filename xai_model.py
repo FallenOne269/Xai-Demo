@@ -58,4 +58,3 @@ def jls_extract_def(explainer, data_row, X_test, sample_idx, predict_fn, model, 
     return exp
 
 
-exp = jls_extract_def(explainer, data_row, X_test, sample_idx, predict_fn, model, num_features)
